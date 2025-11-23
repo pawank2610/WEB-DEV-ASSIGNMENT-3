@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f0f3f7;
+}
+
+/* Header */
+.header {
+    background: #003d99;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #ff704d;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 10vw;
+}
+
+.hero-img img {
+    width: 250px;
+}
+
+.title-animate {
+    font-size: 2.5rem;
+    animation: colorChange 3s infinite alternate;
+}
+
+/* Animation */
+@keyframes colorChange {
+    0% { color: #ff4c4c; }
+    100% { color: #003d99; }
+}
+
+/* About */
+section {
+    padding: 3rem 10vw;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* Skills - Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.skill-card {
+    background: #003d99;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: .3s;
+}
+
+.project-card:hover {
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transform: scale(1.03);
+}
+
+/* Contact */
+form {
+    background: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: .8rem;
+    background: #003d99;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #ff704d;
+}
+
+/* Footer */
+footer {
+    background: #003d99;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-img img {
+        margin-top: 1.5rem;
+    }
+}
